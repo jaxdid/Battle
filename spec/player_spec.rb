@@ -12,11 +12,6 @@ describe Player do
     expect(player1.current_HP).to eq Player::DEFAULT_HP
   end
 
-  it 'damages another player' do
-    expect(player2).to receive(:receives_attack)
-    player1.attack(player2)
-  end
-
   it 'suffers damage after an attack' do
     expect{player2.receives_attack}.to change{player2.current_HP}.by(-10)
   end

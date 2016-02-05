@@ -8,10 +8,6 @@ class Player
     @current_HP = DEFAULT_HP
   end
 
-  def attack(player)
-    player.receives_attack
-  end
-
   def receives_attack
     @current_HP -= 10
   end
