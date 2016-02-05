@@ -1,1 +1,2 @@
-<h3><%= @player_1 %> successfully attacked <%= @player_2 %>!</h3>
+<h3><%= @player_1.name %> successfully attacked <%= @player_2.name %>!</h3>
+<h4><%= @player_2.name %>'s HP: <%= $player_2.current_HP %>/<%= Player::DEFAULT_HP %></h4>
